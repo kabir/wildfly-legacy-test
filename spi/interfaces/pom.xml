@@ -42,12 +42,17 @@
    </properties>
 
    <dependencies>
-      <dependency>
-         <groupId>org.wildfly.model.test</groupId>
-         <artifactId>wildfly-legacy-spi-dependencies</artifactId>
-         <type>pom</type>
-         <scope>provided</scope>
-      </dependency>
+       <dependency>
+           <groupId>org.wildfly.model.test</groupId>
+           <artifactId>wildfly-legacy-spi-dependencies</artifactId>
+           <type>pom</type>
+           <scope>provided</scope>
+       </dependency>
+       <dependency>
+           <groupId>org.wildfly.model.test</groupId>
+           <artifactId>wildfly-model-test</artifactId>
+           <scope>provided</scope>
+       </dependency>
    </dependencies>
 
    <build>

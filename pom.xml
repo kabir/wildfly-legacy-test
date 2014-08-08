@@ -40,13 +40,22 @@
     <packaging>pom</packaging>
 
     <properties>
+      <version.org.apache.maven>3.2.1</version.org.apache.maven>
+      <version.org.codehaus.plexus.plexus-utils>3.0.15</version.org.codehaus.plexus.plexus-utils>
+      <version.org.eclipse.aether>1.0.0.v20140518</version.org.eclipse.aether>
       <version.org.jboss.jboss-dmr>1.2.0.Final</version.org.jboss.jboss-dmr>
       <version.org.jboss.jboss-msc>1.2.2.FInal</version.org.jboss.jboss-msc>
       <version.org.jboss.jboss-vfs>3.2.5.Final</version.org.jboss.jboss-vfs>
+      <version.org.jboss.modules.jboss-modules>1.3.3.Final</version.org.jboss.modules.jboss-modules>
+      <version.org.jboss.shrinkwrap.shrinkwrap>1.1.2</version.org.jboss.shrinkwrap.shrinkwrap>
+      <version.org.jboss.staxmapper>1.1.0.Final</version.org.jboss.staxmapper>
+      <version.org.slf4j>1.7.7.jbossorg-1</version.org.slf4j>
+      <version.junit>4.11</version.junit>
     </properties>
     
     <modules>
        <module>core</module>
+       <module>model-test</module>
        <module>spi</module>
        <module>subsystem</module>
     </modules>
@@ -70,8 +79,76 @@
             <type>pom</type>
             <version>${project.version}</version>
          </dependency>
+         <dependency>
+             <groupId>org.wildfly.model.test</groupId>
+             <artifactId>wildfly-model-test</artifactId>
+             <version>${project.version}</version>
+         </dependency>
    
          <!-- External dependencies -->
+         <dependency>
+             <groupId>org.apache.maven</groupId>
+             <artifactId>maven-aether-provider</artifactId>
+             <version>${version.org.apache.maven}</version>
+             <exclusions>
+                 <exclusion>
+                     <groupId>org.sonatype.aether</groupId>
+                     <artifactId>aether-impl</artifactId>
+                 </exclusion>
+                 <exclusion>
+                     <groupId>org.sonatype.aether</groupId>
+                     <artifactId>aether-spi</artifactId>
+                 </exclusion>
+                 <exclusion>
+                     <groupId>org.sonatype.aether</groupId>
+                     <artifactId>aether-util</artifactId>
+                 </exclusion>
+                 <exclusion>
+                     <groupId>org.sonatype.aether</groupId>
+                     <artifactId>aether-api</artifactId>
+                 </exclusion>
+             </exclusions>
+         </dependency>
+         <dependency>
+             <groupId>org.codehaus.plexus</groupId>
+             <artifactId>plexus-utils</artifactId>
+             <version>${version.org.codehaus.plexus.plexus-utils}</version>
+         </dependency>
+         <dependency>
+             <groupId>org.eclipse.aether</groupId>
+             <artifactId>aether-api</artifactId>
+             <version>${version.org.eclipse.aether}</version>
+         </dependency>
+         <dependency>
+             <groupId>org.eclipse.aether</groupId>
+             <artifactId>aether-spi</artifactId>
+             <version>${version.org.eclipse.aether}</version>
+         </dependency>
+         <dependency>
+             <groupId>org.eclipse.aether</groupId>
+             <artifactId>aether-util</artifactId>
+             <version>${version.org.eclipse.aether}</version>
+         </dependency>
+         <dependency>
+             <groupId>org.eclipse.aether</groupId>
+             <artifactId>aether-impl</artifactId>
+             <version>${version.org.eclipse.aether}</version>
+         </dependency>
+         <dependency>
+             <groupId>org.eclipse.aether</groupId>
+             <artifactId>aether-connector-basic</artifactId>
+             <version>${version.org.eclipse.aether}</version>
+         </dependency>
+         <dependency>
+             <groupId>org.eclipse.aether</groupId>
+             <artifactId>aether-transport-file</artifactId>
+             <version>${version.org.eclipse.aether}</version>
+         </dependency>
+         <dependency>
+             <groupId>org.eclipse.aether</groupId>
+             <artifactId>aether-transport-http</artifactId>
+             <version>${version.org.eclipse.aether}</version>
+         </dependency>
          <dependency>
             <groupId>org.jboss</groupId>
             <artifactId>jboss-dmr</artifactId>
@@ -83,9 +160,40 @@
             <version>${version.org.jboss.jboss-vfs}</version>
          </dependency>
          <dependency>
+             <groupId>org.jboss.modules</groupId>
+             <artifactId>jboss-modules</artifactId>
+             <version>${version.org.jboss.modules.jboss-modules}</version>
+         </dependency>
+         <dependency>
             <groupId>org.jboss.msc</groupId>
             <artifactId>jboss-msc</artifactId>
             <version>${version.org.jboss.jboss-msc}</version>
+         </dependency>
+         <dependency>
+             <groupId>org.jboss.shrinkwrap</groupId>
+             <artifactId>shrinkwrap-api</artifactId>
+             <version>${version.org.jboss.shrinkwrap.shrinkwrap}</version>
+         </dependency>
+         <dependency>
+             <groupId>org.jboss.shrinkwrap</groupId>
+             <artifactId>shrinkwrap-impl-base</artifactId>
+             <version>${version.org.jboss.shrinkwrap.shrinkwrap}</version>
+         </dependency>
+         <dependency>
+             <groupId>org.jboss</groupId>
+             <artifactId>staxmapper</artifactId>
+             <version>${version.org.jboss.staxmapper}</version>
+         </dependency>
+         <dependency>
+             <groupId>org.slf4j</groupId>
+             <artifactId>slf4j-api</artifactId>
+             <version>${version.org.slf4j}</version>
+         </dependency>
+         <dependency>
+             <groupId>junit</groupId>
+             <artifactId>junit</artifactId>
+             <version>${version.junit}</version>
+             <scope>test</scope>
          </dependency>
       </dependencies>
       

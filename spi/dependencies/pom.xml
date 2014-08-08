@@ -61,6 +61,13 @@
       </dependency>
       <dependency>
          <groupId>org.wildfly.model.test.direct</groupId>
+         <artifactId>wildfly-controller-client</artifactId>
+         <version>1.0</version>
+         <scope>system</scope>
+         <systemPath>${wildfly.lib.directory}/wildfly-controller-client-${wildfly.current.version}.jar</systemPath>
+      </dependency>
+      <dependency>
+         <groupId>org.wildfly.model.test.direct</groupId>
          <artifactId>wildfly-core-model-test-framework</artifactId>
          <version>1.0</version>
          <scope>system</scope>
@@ -72,22 +79,6 @@
          <version>1.0</version>
          <scope>system</scope>
          <systemPath>${wildfly.lib.directory}/wildfly-deployment-repository-${wildfly.current.version}.jar</systemPath>
-      </dependency>
-      <!-- 
-      <dependency>
-         <groupId>org.wildfly.model.test.direct</groupId>
-         <artifactId>wildfly-host-controller</artifactId>
-         <version>1.0</version>
-         <scope>system</scope>
-         <systemPath>${wildfly.lib.directory}/wildfly-host-controller-${wildfly.current.version}.jar</systemPath>
-      </dependency>
-       -->
-      <dependency>
-         <groupId>org.wildfly.model.test.direct</groupId>
-         <artifactId>wildfly-model-test</artifactId>
-         <version>1.0</version>
-         <scope>system</scope>
-         <systemPath>${wildfly.lib.directory}/wildfly-model-test-${wildfly.current.version}.jar</systemPath>
       </dependency>
       <dependency>
          <groupId>org.wildfly.model.test.direct</groupId>

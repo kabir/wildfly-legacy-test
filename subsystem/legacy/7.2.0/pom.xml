@@ -42,36 +42,7 @@
       <property.old.as.version>7.2.0.Final</property.old.as.version>
    </properties>
 
-   <dependencies>
-      <dependency>
-         <groupId>org.wildfly.model.test</groupId>
-         <artifactId>wildfly-legacy-spi-dependencies</artifactId>
-         <type>pom</type>
-         <scope>provided</scope>
-         <exclusions>
-            <exclusion>
-               <groupId>org.wildfly.model.test.direct</groupId>
-               <artifactId>wildfly-controller</artifactId>
-            </exclusion>
-            <exclusion>
-               <groupId>org.wildfly.model.test.direct</groupId>
-               <artifactId>wildfly-core-model-test-framework</artifactId>
-            </exclusion>
-            <exclusion>
-               <groupId>org.wildfly.model.test.direct</groupId>
-               <artifactId>wildfly-deployment-repository</artifactId>
-            </exclusion>
-            <exclusion>
-               <groupId>org.wildfly.model.test.direct</groupId>
-               <artifactId>wildfly-server</artifactId>
-            </exclusion>
-         </exclusions>
-      </dependency>
-      <dependency>
-         <groupId>org.wildfly.model.test</groupId>
-         <artifactId>wildfly-legacy-spi</artifactId>
-      </dependency>
-      
+   <dependencies>      
       <dependency>
 	      <groupId>org.jboss.as</groupId>
 	      <artifactId>jboss-as-controller</artifactId>

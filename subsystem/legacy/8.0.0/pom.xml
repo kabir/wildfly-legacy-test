@@ -44,35 +44,6 @@
 
    <dependencies>
       <dependency>
-         <groupId>org.wildfly.model.test</groupId>
-         <artifactId>wildfly-legacy-spi-dependencies</artifactId>
-         <type>pom</type>
-         <scope>provided</scope>
-         <exclusions>
-            <exclusion>
-               <groupId>org.wildfly.model.test.direct</groupId>
-               <artifactId>wildfly-controller</artifactId>
-            </exclusion>
-            <exclusion>
-               <groupId>org.wildfly.model.test.direct</groupId>
-               <artifactId>wildfly-core-model-test-framework</artifactId>
-            </exclusion>
-            <exclusion>
-               <groupId>org.wildfly.model.test.direct</groupId>
-               <artifactId>wildfly-deployment-repository</artifactId>
-            </exclusion>
-            <exclusion>
-               <groupId>org.wildfly.model.test.direct</groupId>
-               <artifactId>wildfly-server</artifactId>
-            </exclusion>
-         </exclusions>
-      </dependency>
-      <dependency>
-         <groupId>org.wildfly.model.test</groupId>
-         <artifactId>wildfly-legacy-spi</artifactId>
-      </dependency>
-      
-      <dependency>
 	      <groupId>org.wildfly</groupId>
 	      <artifactId>wildfly-controller</artifactId>
 	      <version>${property.old.as.version}</version>
