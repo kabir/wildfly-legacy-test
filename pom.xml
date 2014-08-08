@@ -32,7 +32,7 @@
         <version>14</version>
     </parent>
 
-    <artifactId>wildfly-legacy-test-parent</artifactId>
+    <artifactId>wildfly-model-test-parent</artifactId>
 
     <groupId>org.wildfly.model.test</groupId>
     <version>1.0.0.Alpha3-SNAPSHOT</version>
