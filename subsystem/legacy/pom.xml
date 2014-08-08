@@ -28,19 +28,21 @@
 
     <parent>
         <groupId>org.wildfly.model.test</groupId>
-        <artifactId>wildfly-model-test-parent</artifactId>
+        <artifactId>wildfly-subsystem-parent</artifactId>
         <version>1.0.0.Alpha3-SNAPSHOT</version>
     </parent>
 
-    <artifactId>wildfly-core-parent</artifactId>
+    <artifactId>wildfly-legacy-subsystem-parent</artifactId>
 
-    <name>WildFly: Legacy Test Core Parent</name>
+    <name>WildFly: Legacy Test Subsystem Parent</name>
     <packaging>pom</packaging>
 
     <properties>
     </properties>
     <modules>
-        <module>legacy</module>
+        <module>7.1.2</module>
+        <module>7.2.0</module>
+        <module>8.0.0</module>
     </modules>
 
     <build>

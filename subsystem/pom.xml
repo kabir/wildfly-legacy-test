@@ -32,7 +32,7 @@
         <version>1.0.0.Alpha3-SNAPSHOT</version>
     </parent>
 
-    <artifactId>wildfly-legacy-subsystem-parent</artifactId>
+    <artifactId>wildfly-subsystem-parent</artifactId>
 
     <name>WildFly: Legacy Test Subsystem Parent</name>
     <packaging>pom</packaging>
@@ -40,9 +40,7 @@
     <properties>
     </properties>
     <modules>
-        <module>7.1.2</module>
-        <module>7.2.0</module>
-        <module>8.0.0</module>
+        <module>legacy</module>
     </modules>
 
     <build>
