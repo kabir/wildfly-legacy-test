@@ -27,7 +27,7 @@
    <modelVersion>4.0.0</modelVersion>
 
    <parent>
-      <groupId>org.wildfly.legacy.test</groupId>
+      <groupId>org.wildfly.model.test</groupId>
       <artifactId>wildfly-legacy-subsystem-parent</artifactId>
       <version>1.0.0.Alpha3-SNAPSHOT</version>
    </parent>
@@ -44,31 +44,31 @@
 
    <dependencies>
       <dependency>
-         <groupId>org.wildfly.legacy.test</groupId>
+         <groupId>org.wildfly.model.test</groupId>
          <artifactId>wildfly-legacy-spi-dependencies</artifactId>
          <type>pom</type>
          <scope>provided</scope>
          <exclusions>
             <exclusion>
-               <groupId>org.wildfly.legacy.test.direct</groupId>
+               <groupId>org.wildfly.model.test.direct</groupId>
                <artifactId>wildfly-controller</artifactId>
             </exclusion>
             <exclusion>
-               <groupId>org.wildfly.legacy.test.direct</groupId>
+               <groupId>org.wildfly.model.test.direct</groupId>
                <artifactId>wildfly-core-model-test-framework</artifactId>
             </exclusion>
             <exclusion>
-               <groupId>org.wildfly.legacy.test.direct</groupId>
+               <groupId>org.wildfly.model.test.direct</groupId>
                <artifactId>wildfly-deployment-repository</artifactId>
             </exclusion>
             <exclusion>
-               <groupId>org.wildfly.legacy.test.direct</groupId>
+               <groupId>org.wildfly.model.test.direct</groupId>
                <artifactId>wildfly-server</artifactId>
             </exclusion>
          </exclusions>
       </dependency>
       <dependency>
-         <groupId>org.wildfly.legacy.test</groupId>
+         <groupId>org.wildfly.model.test</groupId>
          <artifactId>wildfly-legacy-spi</artifactId>
       </dependency>
       

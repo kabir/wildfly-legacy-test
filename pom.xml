@@ -34,7 +34,7 @@
 
     <artifactId>wildfly-legacy-test-parent</artifactId>
 
-    <groupId>org.wildfly.legacy.test</groupId>
+    <groupId>org.wildfly.model.test</groupId>
     <version>1.0.0.Alpha3-SNAPSHOT</version>
     <name>WildFly: Legacy Test</name>
     <packaging>pom</packaging>
@@ -60,12 +60,12 @@
       <!-- Dependencies in this project -->
       <dependencies>
          <dependency>
-            <groupId>org.wildfly.legacy.test</groupId>
+            <groupId>org.wildfly.model.test</groupId>
             <artifactId>wildfly-legacy-spi</artifactId>
             <version>${project.version}</version>
          </dependency>
          <dependency>
-            <groupId>org.wildfly.legacy.test</groupId>
+            <groupId>org.wildfly.model.test</groupId>
             <artifactId>wildfly-legacy-spi-dependencies</artifactId>
             <type>pom</type>
             <version>${project.version}</version>

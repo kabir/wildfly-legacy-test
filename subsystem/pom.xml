@@ -27,7 +27,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.wildfly.legacy.test</groupId>
+        <groupId>org.wildfly.model.test</groupId>
         <artifactId>wildfly-legacy-test-parent</artifactId>
         <version>1.0.0.Alpha3-SNAPSHOT</version>
     </parent>

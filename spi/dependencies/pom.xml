@@ -27,7 +27,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.wildfly.legacy.test</groupId>
+        <groupId>org.wildfly.model.test</groupId>
         <artifactId>wildfly-legacy-spi-parent</artifactId>
         <version>1.0.0.Alpha3-SNAPSHOT</version>
     </parent>
@@ -53,21 +53,21 @@
          WildFly core is a consumer of this project. 
        -->
       <dependency>
-         <groupId>org.wildfly.legacy.test.direct</groupId>
+         <groupId>org.wildfly.model.test.direct</groupId>
          <artifactId>wildfly-controller</artifactId>
          <version>1.0</version>
          <scope>system</scope>
          <systemPath>${wildfly.lib.directory}/wildfly-controller-${wildfly.current.version}.jar</systemPath>
       </dependency>
       <dependency>
-         <groupId>org.wildfly.legacy.test.direct</groupId>
+         <groupId>org.wildfly.model.test.direct</groupId>
          <artifactId>wildfly-core-model-test-framework</artifactId>
          <version>1.0</version>
          <scope>system</scope>
          <systemPath>${wildfly.lib.directory}/wildfly-core-model-test-framework-${wildfly.current.version}.jar</systemPath>
       </dependency>
       <dependency>
-         <groupId>org.wildfly.legacy.test.direct</groupId>
+         <groupId>org.wildfly.model.test.direct</groupId>
          <artifactId>wildfly-deployment-repository</artifactId>
          <version>1.0</version>
          <scope>system</scope>
@@ -75,7 +75,7 @@
       </dependency>
       <!-- 
       <dependency>
-         <groupId>org.wildfly.legacy.test.direct</groupId>
+         <groupId>org.wildfly.model.test.direct</groupId>
          <artifactId>wildfly-host-controller</artifactId>
          <version>1.0</version>
          <scope>system</scope>
@@ -83,21 +83,21 @@
       </dependency>
        -->
       <dependency>
-         <groupId>org.wildfly.legacy.test.direct</groupId>
+         <groupId>org.wildfly.model.test.direct</groupId>
          <artifactId>wildfly-model-test</artifactId>
          <version>1.0</version>
          <scope>system</scope>
          <systemPath>${wildfly.lib.directory}/wildfly-model-test-${wildfly.current.version}.jar</systemPath>
       </dependency>
       <dependency>
-         <groupId>org.wildfly.legacy.test.direct</groupId>
+         <groupId>org.wildfly.model.test.direct</groupId>
          <artifactId>wildfly-server</artifactId>
          <version>1.0</version>
          <scope>system</scope>
          <systemPath>${wildfly.lib.directory}/wildfly-server-${wildfly.current.version}.jar</systemPath>
       </dependency>
       <dependency>
-         <groupId>org.wildfly.legacy.test.direct</groupId>
+         <groupId>org.wildfly.model.test.direct</groupId>
          <artifactId>wildfly-subsystem-test-framework</artifactId>
          <version>1.0</version>
          <scope>system</scope>
